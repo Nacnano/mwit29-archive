@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="bg-white rounded-lg shadow px-6 py-5">
+    <footer className="bg-white rounded-t-lg shadow px-6 py-5">
       <div className="flex justify-center">
         <ul className="flex text-lg text-gray-500">
           <li>
@@ -23,7 +23,7 @@ function Footer() {
       <hr className="my-2 w-80 rounded border-gray-300 mx-auto" />
       <span className="block text-md text-gray-500 text-center">
         Designed and Developed by{" "}
-        <a href="NOTED" className="hover:underline">
+        <a href="NOTED" className="hover:underline text-blue-500">
           Nacnano
         </a>
       </span>
