@@ -1,18 +1,21 @@
 function Header() {
   return (
-    <header className="flex bg-white px-2 py-2.5 rounded-b-lg shadow">
+    <nav className="flex bg-white px-2 py-2.5 rounded-b-lg shadow fixed w-full z-20 top-0 left-0 border-b">
       <div className="container flex items-center justify-between mx-auto text-gray-800">
-        <a href="#" className="">
+        <a href="#" className="flex items-center">
           {/* NOTED ADD IMAGE*/}
-          <span className="self-center text-xl">MWIT 29 Archive</span>
+          <span className="self-center text-xl whitespace-nowrap">MWIT 29 Archive</span>
         </a>
 
-        {/* NOTED ADD LOGIN BUTTON*/}
+        <div className="flex order-2 ">
+            <a href="NOTED" className="text-white text-center bg-blue-700 hover:bg-blue-800 focus:outline-none rounded px-5 py-2.5 mr-3"> Login </a>
+        </div>
+
         <div className="items-center justify-between w-full">
           <ul className="flex p-4">
             <li>
               <a href="#" className="block mx-4 rounded hover:text-blue-700">
-                Room
+                Rooms
               </a>
             </li>
             <li>
@@ -28,7 +31,7 @@ function Header() {
           </ul>
         </div>
       </div>
-    </header>
+    </nav>
 
     /* <nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
   <div class="container flex flex-wrap items-center justify-between mx-auto">
