@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Head>
         <title>MWIT 29</title>
-        <meta name="description" content="ADD MORE DETAILED DESCRIPTION SOON" />
+        <meta name="description" content="NOTED MORE DETAILED DESCRIPTION SOON" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
