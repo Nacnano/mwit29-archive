@@ -1,14 +1,21 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Room } from "../models/room";
 
-const RoomCard = () => {
+type Props = {
+  rooms: Room[];
+};
+
+const RoomCard = ({ rooms }: Props) => {
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
       <Link href="#">
-        <img
+        <Image
           className="rounded-t-lg"
           src="/mwit/meal.jpg"
           alt="meal"
+          layout="fill"
+          objectFit="contain"
         />
       </Link>
       <div className="p-5">
