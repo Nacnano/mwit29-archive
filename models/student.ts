@@ -10,7 +10,8 @@ export type Student = {
   major: string[];
   fields: string[];
   subject?: string[];
-  favorites: string[];
+  description?: string
+  favorites?: string[];
   quote: string;
   tel?: string;
   fb?: string;
