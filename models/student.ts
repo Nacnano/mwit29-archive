@@ -7,7 +7,7 @@ export type Student = {
   nickname: string;
   study: string;
   abroad: boolean | false;
-  major: string[];
+  major: string;
   fields: string[];
   subject?: string[];
   description?: string;
