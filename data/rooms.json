@@ -1,16 +1,26 @@
 [
   {
     "id": 5,
-    "name": "Voitja (NOTED)",
+    "name": "Voitja",
+    "picturePath": "/mwit/meal.jpg",
     "description": "ห้องที่มีแต่คนน่ารัก",
     "quote": "คิดจะพัก คิดถึงห้องห้าาาา",
     "active": true
   },
   {
     "id": 0,
-    "name": "TEST",
-    "description": "TEST 1",
-    "quote": "MONKEY",
+    "name": "Zerozzz",
+    "picturePath": "/mwit/trees.jpg",
+    "description": "Insert Mook Siew here...",
+    "quote": "I want to be with you.",
+    "active": true
+  },
+  {
+    "id": 1,
+    "name": "OneRoom",
+    "picturePath": "/mwit/photos.jpg",
+    "description": "The first room of MWIT 29",
+    "quote": "Hong Nueng so pro",
     "active": true
   }
 ]
