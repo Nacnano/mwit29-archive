@@ -5,15 +5,23 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import RoomCard from "../components/RoomCard";
 import { Room } from "../models/room";
+import { GetStaticProps } from "next";
+// import { getSortedRoomsData } from "../lib/rooms";
 
 const inter = Inter({ subsets: ["latin"] });
 
 type Props = {
+  // sortedRoomsData: Room[];
   rooms: Room[];
 };
 
-export default function Home({ rooms }: Props) {
-  console.log(rooms);
+export default function Home({ 
+  // sortedRoomsData, 
+  rooms 
+}: Props) {
+  // console.log(sortedRoomsData);
+  console.log(rooms)
+  
   return (
     <div className="bg-gray-100 w-screen overflow-hidden h-screen flex flex-col items-center">
       <Head>
@@ -61,8 +69,27 @@ export default function Home({ rooms }: Props) {
   );
 }
 
-export async function getRoomsProps() {
-  const res = await fetch("http://localhost:3000pnp/api/rooms");
+
+export const getSortedRoomsProps:GetStaticProps = async function () {
+  // const sortedRoomsData = getSortedRoomsData();
+
+  const res = await fetch("https://mwit29-archive.vercel.app/api/rooms");
   const rooms = await res.json();
-  return { props: { rooms } };
+
+  return {
+    props: {
+      // sortedRoomsData,
+      rooms,
+    }
+  }
 }
+
+// export const getRoomsProps: GetStaticProps = async function () {
+//     const res = await fetch("https://mwit29-archive.vercel.app/api/rooms");
+//     const rooms = await res.json();
+//     return {
+//       props: {
+//         rooms
+//       }
+//     }
+// }
