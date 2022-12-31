@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image'
+import Link from 'next/link'
 
 function Header() {
   return (
@@ -15,9 +15,7 @@ function Header() {
                 height="100"
                 alt="mwit29-archive-logo"
               ></Image>
-              <span className="self-center text-xl sm:whitespace-nowrap">
-                MWIT 29 Archive
-              </span>
+              <span className="self-center text-xl sm:whitespace-nowrap">MWIT 29 Archive</span>
             </Link>
 
             <div className="relative flex ml-auto items-center w-auto">
@@ -50,8 +48,8 @@ function Header() {
                   href="NOTED"
                   className="text-white text-center bg-blue-700 hover:bg-blue-800 focus:outline-none rounded-lg px-5 py-2.5 mr-3"
                 >
-                  {" "}
-                  Login{" "}
+                  {' '}
+                  Login{' '}
                 </a>
               </div>
             </div>
@@ -59,7 +57,7 @@ function Header() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Header;
+export default Header

@@ -22,13 +22,13 @@ function Footer() {
       </div>
       <hr className="my-2 w-80 rounded border-gray-300 mx-auto" />
       <span className="block text-md text-gray-500 text-center">
-        Designed and Developed by{" "}
+        Designed and Developed by{' '}
         <a href="NOTED" className="rounded hover:text-blue-900 text-blue-500">
           Nacnano
         </a>
       </span>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

@@ -1,16 +1,16 @@
-import Link from "next/link";
-import Image from "next/image";
-import { Room } from "../models/room";
+import Link from 'next/link'
+import Image from 'next/image'
+import { Room } from '../models/room'
 
 type Props = {
-  room: Room;
-};
+  room: Room
+}
 
 const RoomCard = ({ room }: Props) => {
   return (
     <Link
       href={{
-        pathname: "/room/[id]",
+        pathname: '/room/[id]',
         query: { id: room.id },
       }}
       as={`/room/${room.id}`}
@@ -20,20 +20,16 @@ const RoomCard = ({ room }: Props) => {
         <img
           className="rounded-t-lg"
           src={room.picturePath}
-          alt={"room-" + room.id + "-picture"}
+          alt={'room-' + room.id + '-picture'}
           // layout="fill"
           // objectFit="contain"
         />
       </div>
       <div className="p-5">
         <div className="items-center justify-start gap-2">
-          <h1 className="text-1xl font-normal tracking-tight text-gray-900">
-            Room {room.id}
-          </h1>
+          <h1 className="text-1xl font-normal tracking-tight text-gray-900">Room {room.id}</h1>
 
-          <h2 className="text-2xl font-semibold align-middle text-gray-700">
-            {room.name}
-          </h2>
+          <h2 className="text-2xl font-semibold align-middle text-gray-700">{room.name}</h2>
         </div>
 
         {/* <div className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -54,7 +50,7 @@ const RoomCard = ({ room }: Props) => {
         </div> */}
       </div>
     </Link>
-  );
-};
+  )
+}
 
-export default RoomCard;
+export default RoomCard
