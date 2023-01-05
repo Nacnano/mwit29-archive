@@ -17,7 +17,7 @@ export async function getAllRoomsIds() {
   return rooms.map((room: Room) => {
     return {
       params: {
-        id: room.id.toString(),
+        id: room.id,
       },
     }
   })

@@ -24,6 +24,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 }
 
 export default function RoomPage({ studentsData }: { studentsData: Student[] }) {
+  // console.log(studentsData[0].firstname)
   return (
     <>
       <Header />
