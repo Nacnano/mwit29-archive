@@ -1,4 +1,3 @@
-import { GetStaticPaths } from 'next'
 import { Room } from '../models/room'
 
 export async function getAllRoomsData() {
