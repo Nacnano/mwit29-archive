@@ -3,7 +3,8 @@
     "id": "07967",
     "mwit": 29,
     "room": 5,
-    "firstname": "Chotpisit Adunsehawat",
+    "number": 13,
+    "firstname": "Chotpisit",
     "lastname": "Adunsehawat",
     "nickname": "Nac",
     "study": "Computer Engineering, Chulalongkorn University",
@@ -17,15 +18,17 @@
     "fb": "Nac Chotpisit Adunsehawat",
     "line": "grb080916c",
     "ig": "chotpisit_nac",
+    "exchanged": false,
     "active": true
   },
   {
     "id": "07966",
     "mwit": 29,
     "room": 5,
-    "firstname": "Chotpisit Adunsehawat",
-    "lastname": "Adunsehawat",
-    "nickname": "Nac",
+    "number": 12,
+    "firstname": "Tattoo",
+    "lastname": "Colour",
+    "nickname": "Music",
     "study": "Computer Engineering, Chulalongkorn University",
     "abroad": false,
     "major": "Computer",
@@ -37,6 +40,7 @@
     "fb": "Nac Chotpisit Adunsehawat",
     "line": "grb080916c",
     "ig": "chotpisit_nac",
+    "exchanged": false,
     "active": true
   }
 ]

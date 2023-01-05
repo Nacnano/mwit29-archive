@@ -33,5 +33,5 @@ export default function RoomPage({ studentsData }: { studentsData: Student[] }) 
     </div>
     </>
 
-  }));
+  })
 }

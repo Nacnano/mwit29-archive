@@ -2,11 +2,12 @@ export type Student = {
   id: string
   mwit: number
   room: number
+  number: number
   firstname: string
   lastname: string
   nickname: string
   study: string
-  abroad: boolean | false
+  abroad: boolean
   major: string
   fields: string[]
   subject?: string[]
@@ -17,5 +18,6 @@ export type Student = {
   fb?: string
   line?: string
   ig?: string
-  active: boolean | true
+  exchanged?: boolean
+  active: boolean
 }
