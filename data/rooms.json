@@ -1,6 +1,6 @@
 [
   {
-    "id": 5,
+    "id": "5",
     "name": "Voitja",
     "picturePath": "/mwit/meal.jpg",
     "description": "ห้องที่มีแต่คนน่ารัก",
@@ -8,7 +8,7 @@
     "active": true
   },
   {
-    "id": 0,
+    "id": "0",
     "name": "Zerozzz",
     "picturePath": "/mwit/trees.jpg",
     "description": "Insert Mook Siew here...",
@@ -16,7 +16,7 @@
     "active": true
   },
   {
-    "id": 1,
+    "id": "1",
     "name": "OneRoom",
     "picturePath": "/mwit/photos.jpg",
     "description": "The first room of MWIT 29",
