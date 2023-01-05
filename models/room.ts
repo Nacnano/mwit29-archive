@@ -1,5 +1,5 @@
 export type Room = {
-  id: number
+  id: string
   name: string
   picturePath: string
   description?: string

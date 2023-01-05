@@ -5,7 +5,7 @@ import Header from '../components/Header'
 import RoomCard from '../components/RoomCard'
 import { Room } from '../models/room'
 import { GetStaticProps } from 'next'
-import { getSortedRoomsData } from '../lib/rooms'
+import { getAllRoomsData } from '../lib/rooms'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -58,7 +58,7 @@ export default function Home({ sortedRooms }: Props) {
 }
 
 export const getStaticProps: GetStaticProps = async function () {
-  const sortedRooms = await getSortedRoomsData()
+  const sortedRooms = await getAllRoomsData()
 
   return {
     props: {
