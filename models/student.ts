@@ -1,8 +1,8 @@
 export type Student = {
   id: string
-  mwit: number
-  room: number
-  number: number
+  mwit: string
+  room: string
+  number: string
   firstname: string
   lastname: string
   nickname: string

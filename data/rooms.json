@@ -8,19 +8,19 @@
     "active": true
   },
   {
-    "id": "0",
-    "name": "Zerozzz",
+    "id": "1",
+    "name": "RoomOne",
     "picturePath": "/mwit/trees.jpg",
     "description": "Insert Mook Siew here...",
-    "quote": "เมื่อไหร่ผมจะมีแฟนหว่า",
+    "quote": "มุกเสี่ยวไม่ช่วยให้คุณมีแฟน",
     "active": true
   },
   {
-    "id": "1",
-    "name": "OneRoom",
+    "id": "10",
+    "name": "RoomTen",
     "picturePath": "/mwit/photos.jpg",
     "description": "The first room of MWIT 29",
-    "quote": "Hong Nueng so pro",
+    "quote": "Hong Sip so pro",
     "active": true
   }
 ]

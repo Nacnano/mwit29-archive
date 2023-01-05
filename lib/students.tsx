@@ -5,7 +5,7 @@ export async function getStudentsByRoomId(roomId: string) {
   const students = await res.json()
 
   return students.filter((student: Student) => {
-    return student.id === roomId
+    return student.room === roomId
   })
 }
 
@@ -14,7 +14,7 @@ export async function getAllStudents(roomId: string) {
   const students = await res.json()
 
   return students.sort((a: Student, b: Student) => {
-    if (a.id <= b.id) return -1
+    if (Number(a.id) <= Number(b.id)) return -1
     return 1
   })
 }

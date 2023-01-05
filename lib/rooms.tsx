@@ -5,7 +5,7 @@ export async function getAllRoomsData() {
   const rooms = await res.json()
 
   return rooms.sort((a: Room, b: Room) => {
-    if (a.id > b.id) return 1
+    if (Number(a.id) > Number(b.id)) return 1
     return -1
   })
 }

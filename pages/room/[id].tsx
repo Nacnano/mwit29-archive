@@ -26,12 +26,14 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 export default function RoomPage({ studentsData }: { studentsData: Student[] }) {
   return (
     <>
-        <Header/>
-    <div>
-    studentsData.forEach((student) => {
-    return <div className="text-center">TH {student.nickname}</div>
-    </div>
+      <Header />
+      <div>
+        {studentsData.map((student) => (
+          <div key={student.id} className="text-center">
+            TH {student.firstname}
+          </div>
+        ))}
+      </div>
     </>
-
-  })
+  )
 }
