@@ -18,5 +18,25 @@
     "line": "grb080916c",
     "ig": "chotpisit_nac",
     "active": true
+  },
+  {
+    "id": "07966",
+    "mwit": 29,
+    "room": 5,
+    "firstname": "Chotpisit Adunsehawat",
+    "lastname": "Adunsehawat",
+    "nickname": "Nac",
+    "study": "Computer Engineering, Chulalongkorn University",
+    "abroad": false,
+    "major": "Computer",
+    "fields": ["Computer", "Engineering"],
+    "description": "Just a Mediocre Student",
+    "favorites": ["Coding", "Math", "Physics", "Gaming", "Anime"],
+    "quote": "จะจีบก็รีบจีบ เดี๋ยวไม่ทัน",
+    "tel": "0961896046",
+    "fb": "Nac Chotpisit Adunsehawat",
+    "line": "grb080916c",
+    "ig": "chotpisit_nac",
+    "active": true
   }
 ]
