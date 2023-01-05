@@ -7,7 +7,6 @@ import { Student } from '../../models/student'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = await getAllRoomsIds()
-  console.log(paths)
   return {
     paths,
     fallback: false,
@@ -23,6 +22,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   }
 }
 
-export default function Room() {
+export default function RoomPage() {
   return <div>Coming Soon...</div>
 }
