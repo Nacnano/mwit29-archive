@@ -4,6 +4,7 @@ import { getAllRoomsIds } from '../../lib/rooms'
 import { getStudentsByRoomId } from '../../lib/students'
 import { Room } from '../../models/room'
 import { Student } from '../../models/student'
+import Header from '../../components/Header'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = await getAllRoomsIds()
@@ -14,14 +15,23 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const roomData: Student[] = await getStudentsByRoomId(params?.id as string)
+  const studentsData: Student[] = await getStudentsByRoomId(params?.id as string)
   return {
     props: {
-      roomData,
+      studentsData,
     },
   }
 }
 
-export default function RoomPage() {
-  return <div>Coming Soon...</div>
+export default function RoomPage({ studentsData }: { studentsData: Student[] }) {
+  return (
+    <>
+        <Header/>
+    <div>
+    studentsData.forEach((student) => {
+    return <div className="text-center">TH {student.nickname}</div>
+    </div>
+    </>
+
+  }));
 }
