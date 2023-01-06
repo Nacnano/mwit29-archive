@@ -9,7 +9,7 @@ function Header() {
           <div className="relative flex items-center">
             <Link href="/" className="flex items-center w-100">
               <Image
-                src="/portraits/07967.jpg"
+                src="/student/07967.jpg"
                 className="mr-3 my-1 self-center"
                 width="100"
                 height="100"

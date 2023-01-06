@@ -16,15 +16,8 @@ const RoomCard = ({ room }: Props) => {
       as={`/room/${room.id}`}
       className="max-w-sm bg-gray-100 border border-gray-200 rounded-lg shadow-md hover:scale-110"
     >
-      <div>
-        <img
-          className="rounded-t-lg"
-          src={room.picturePath}
-          alt={'room-' + room.id + '-picture'}
-          // layout="fill"
-          // objectFit="contain"
-        />
-      </div>
+      {/* ISSUE: next/image with tailwind is somehow unstable. */}
+      <img className="rounded-t-lg" src={room.picturePath} alt={'room-' + room.id + '-picture'} />
       <div className="flex flex-col p-5">
         <div className="items-center justify-start gap-2">
           <h1 className="text-1xl font-normal tracking-tight text-gray-900">Room {room.id}</h1>

@@ -5,6 +5,7 @@ import { getStudentsByRoomId } from '../../lib/students'
 import { Room } from '../../models/room'
 import { Student } from '../../models/student'
 import Header from '../../components/Header'
+import StudentCard from '../../components/StudentCard'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = await getAllRoomsIds()
@@ -31,7 +32,7 @@ export default function RoomPage({ studentsData }: { studentsData: Student[] }) 
       <div>
         {studentsData.map((student) => (
           <div key={student.id} className="text-center">
-            TH {student.firstname}
+            <StudentCard student={student} />
           </div>
         ))}
       </div>
