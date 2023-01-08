@@ -1,9 +1,13 @@
 import { AppProps } from 'next/app'
 import Footer from './Footer'
 import Header from './Header'
-import { ReactNode } from 'react'
+import React, { ReactNode } from 'react'
 
-export function Layout(children: ReactNode) {
+interface LayoutProps {
+  children: React.ReactNode
+}
+
+export function Layout({ children }: LayoutProps) {
   return (
     <>
       <Header />
