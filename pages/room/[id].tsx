@@ -4,7 +4,6 @@ import { getAllRoomsIds } from '../../lib/rooms'
 import { getStudentsByRoomId } from '../../lib/students'
 import { Room } from '../../models/room'
 import { Student } from '../../models/student'
-import Header from '../../components/Header'
 import StudentCard from '../../components/StudentCard'
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -25,7 +24,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 }
 
 export default function RoomPage({ studentsData }: { studentsData: Student[] }) {
-  // console.log(studentsData[0].firstname)
   return (
     <>
       <div>

@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
 import RoomCard from '../components/RoomCard'
 import { Room } from '../models/room'
 import { GetStaticProps } from 'next'
