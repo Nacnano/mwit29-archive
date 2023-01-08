@@ -28,7 +28,6 @@ export default function RoomPage({ studentsData }: { studentsData: Student[] }) 
   // console.log(studentsData[0].firstname)
   return (
     <>
-      <Header />
       <div>
         {studentsData.map((student) => (
           <div key={student.id} className="text-center">
