@@ -24,7 +24,6 @@ export default function Home({ sortedRooms }: Props) {
       </Head>
 
       <div className="bg-gray-100 w-screen h-full flex flex-col items-center">
-        <Header />
         <div>
           <div className="bg-gray-200 relative max-w-8xl flex w-screen flex-1 h-screen flex-col items-center justify-center px-10 mb-10 text-center">
             <div className="">
@@ -51,7 +50,6 @@ export default function Home({ sortedRooms }: Props) {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     </div>
   )
