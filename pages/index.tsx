@@ -2,8 +2,9 @@ import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import RoomCard from '../components/RoomCard'
 import { Room } from '../models/room'
-import { GetStaticProps } from 'next'
+import { GetServerSideProps, GetStaticProps } from 'next'
 import { getAllRoomsData } from '../lib/rooms'
+import clientPromise from '../lib/mongodb'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -60,5 +61,19 @@ export const getStaticProps: GetStaticProps = async function () {
     props: {
       sortedRooms,
     },
+  }
+}
+
+export const getServerSideProps: GetServerSideProps = async function () {
+  try {
+    await clientPromise
+    return {
+      props: {
+        isConnected: true,
+      },
+    }
+  } catch (e) {
+    console.log(e)
+    return { props: { isConnected: false } }
   }
 }
