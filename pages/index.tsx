@@ -27,7 +27,7 @@ export default function Home({ sortedRooms }: Props) {
           <div className="bg-gray-200 relative max-w-8xl flex w-screen flex-1 h-screen flex-col items-center justify-center px-10 mb-10 text-center">
             <div className="">
               <div className="flex flex-col items-center text-4xl font-normal text-center mr-10 gap-3">
-                <div>&quot;I dreamed to be a doctor for 16 years.</div>
+                <div>&quot;I dreamed to be an Engineer for 16 years.</div>
                 <div>But being at MWIT, it made me realized that I could be a doctor.&quot;</div>
               </div>
               <div className="mt-5 text-2xl font-normal text-right pb-20">
