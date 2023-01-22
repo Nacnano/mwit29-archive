@@ -24,22 +24,22 @@ function Header() {
               <nav className="leading-6">
                 <ul className="flex space-x-5">
                   <li>
-                    <a href="#" className="block rounded hover:text-blue-700">
+                    <a href="rooms" className="block rounded hover:text-blue-700">
                       Rooms
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="block rounded hover:text-blue-700">
+                    <a href="students" className="block rounded hover:text-blue-700">
                       Students
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="block rounded hover:text-blue-700">
+                    <a href="gallery" className="block rounded hover:text-blue-700">
                       Gallery
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="block rounded hover:text-blue-700">
+                    <a href="statistics" className="block rounded hover:text-blue-700">
                       Statistics
                     </a>
                   </li>
