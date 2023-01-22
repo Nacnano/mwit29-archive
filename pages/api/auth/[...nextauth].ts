@@ -1,28 +1,24 @@
 import { Account, Profile } from 'next-auth'
 import NextAuth from 'next-auth/next'
-import GoogleProvider from 'next-auth/providers/google'
+import GoogleProvider, { GoogleProfile } from 'next-auth/providers/google'
 
 export default NextAuth({
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID as string,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
-
-      // callbacks: {
-      //   async signIn({ account, profile }) {
-      //     if (account.provider === 'google') {
-      //       return profile.email_verified && profile.email.endsWith('@example.com')
-      //     }
-      //     return true // Do different verification for other providers that don't have `email_verified`
-      //   },
-      // },
+      authorization: {
+        url: 'https://accounts.google.com/o/oauth2/auth?response_type=code&hd=mwit.ac.th',
+      },
     }),
   ],
   callbacks: {
     async signIn({ account, profile }) {
       if (account?.provider === 'google') {
-        // Type warnings here I will leave it like this... Fix soon?
-        return profile.email_verified && (profile.email as string).endsWith('@mwit.ac.th')
+        return (
+          (profile as GoogleProfile).email_verified &&
+          (profile as GoogleProfile).email.endsWith('@mwit.ac.th')
+        )
       }
       return true
     },
