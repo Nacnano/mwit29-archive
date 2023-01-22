@@ -1,7 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useSession, signIn, signOut } from 'next-auth/react'
 
 function Header() {
+  const { data: session } = useSession()
   return (
     <div className="sticky flex-none top-0 py-2 bg-white rounded-b-lg shadow fixed w-full z-40 left-0 border-b">
       <div className="max-w-8xl mx-auto text-gray-800 ">
@@ -44,12 +46,12 @@ function Header() {
                 </ul>
               </nav>
               <div className="flex border-l border-slate-200 ml-6 pl-6 items-center">
-                <a
-                  href="NOTED"
-                  className="text-white text-center bg-blue-700 hover:bg-blue-800 focus:outline-none rounded-lg px-5 py-2.5 mr-3"
-                >
-                  {' '}
-                  Login{' '}
+                <a className="text-white text-center bg-blue-700 hover:bg-blue-800 focus:outline-none rounded-lg px-5 py-2.5 mr-3">
+                  {session && session.user ? (
+                    <button onClick={() => signOut()}>Sign out</button>
+                  ) : (
+                    <button onClick={() => signIn()}>Sign in</button>
+                  )}
                 </a>
               </div>
             </div>
