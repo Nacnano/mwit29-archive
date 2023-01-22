@@ -64,16 +64,15 @@ export const getStaticProps: GetStaticProps = async function () {
   }
 }
 
-export const getServerSideProps: GetServerSideProps = async function () {
-  try {
-    await clientPromise
-    return {
-      props: {
-        isConnected: true,
-      },
-    }
-  } catch (e) {
-    console.log(e)
-    return { props: { isConnected: false } }
-  }
-}
+// export const getServerSideProps: GetServerSideProps = async function () {
+//   try {
+//     await clientPromise
+//     return {
+//       props: {
+//         isConnected: true,
+//       },
+//     }
+//   } catch (e) {
+//     return { props: { isConnected: false } }
+//   }
+// }
